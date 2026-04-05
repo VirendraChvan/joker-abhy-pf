@@ -1,0 +1,15 @@
+# robots.txt — joker_abhy Portfolio
+# Abhishek Gharpankar | https://joker-abhy.onrender.com
+
+User-agent: *
+Allow: /
+Allow: /pages/
+Allow: /assets/
+Allow: /img/
+
+Disallow: /assets/data.json
+Disallow: /seo/
+
+Sitemap: https://joker-abhy.onrender.com/sitemap.xml
+
+Crawl-delay: 10

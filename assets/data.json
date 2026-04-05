@@ -1,0 +1,169 @@
+{
+  "identity": {
+    "fullName": "Abhishek Gharpankar",
+    "aliases": ["joker_abhy", "joker abhi", "abhi joker", "joker"],
+    "primaryAlias": "joker_abhy",
+    "tagline": "Fitness. Food. Fashion.",
+    "bio": "I turn discipline into content and content into culture. From the grind of the gym floor to the lens of a brand campaign — this is authentic fitness, lived and shared.",
+    "niche": ["Fitness", "Food", "Fashion"],
+    "heroImage": "img/AbhiPhotos/hero.jpeg",
+    "heroImageAlt": "Abhishek Gharpankar joker_abhy fitness influencer gym portrait",
+    "ogImage": "img/AbhiPhotos/hero.jpeg"
+  },
+  "seo": {
+    "title": "Abhishek Gharpankar | joker_abhy — Fitness Influencer & Brand Partner",
+    "description": "Official portfolio of Abhishek Gharpankar aka joker_abhy — Fitness, Food & Fashion creator with 5M+ monthly engagements. Partner with India's rising fitness influencer.",
+    "keywords": "Abhishek Gharpankar, joker_abhy, fitness influencer India, fitness content creator, gym influencer, brand collaboration, fitness brand partnership",
+    "canonicalUrl": "https://joker-abhy.onrender.com",
+    "ogTitle": "joker_abhy | Fitness. Food. Fashion.",
+    "ogDescription": "5M+ monthly engagements. 50+ brand deals. One authentic fitness voice.",
+    "ogType": "profile",
+    "twitterCard": "summary_large_image",
+    "author": "Abhishek Gharpankar"
+  },
+  "stats": [
+    {
+      "label": "Monthly Engagements",
+      "value": "5M+",
+      "icon": "🔥",
+      "ariaLabel": "5 million plus monthly engagements across all platforms"
+    },
+    {
+      "label": "Brand Sponsorships",
+      "value": "50+",
+      "icon": "🤝",
+      "ariaLabel": "Over 50 brand sponsorships completed"
+    },
+    {
+      "label": "Fitness Niche",
+      "value": "#1",
+      "icon": "💪",
+      "ariaLabel": "Number one fitness content creator"
+    },
+    {
+      "label": "Platforms Active",
+      "value": "3",
+      "icon": "📱",
+      "ariaLabel": "Active on 3 major social platforms"
+    }
+  ],
+  "socials": [
+    {
+      "platform": "Instagram",
+      "handle": "@joker_abhy",
+      "url": "https://www.instagram.com/joker_abhy",
+      "followers": "Growing Fast",
+      "followerCount": "↑ Rapidly",
+      "icon": "instagram",
+      "color": "#E1306C",
+      "ariaLabel": "Follow Abhishek Gharpankar on Instagram at joker_abhy"
+    },
+    {
+      "platform": "YouTube",
+      "handle": "@joker__abhy",
+      "url": "https://www.youtube.com/@joker__abhy",
+      "followers": "Subscribers",
+      "followerCount": "↑ Rapidly",
+      "icon": "youtube",
+      "color": "#FF0000",
+      "ariaLabel": "Subscribe to Abhishek Gharpankar on YouTube at joker__abhy"
+    },
+    {
+      "platform": "Threads",
+      "handle": "@joker_abhy",
+      "url": "https://www.threads.com/@joker_abhy",
+      "followers": "Followers",
+      "followerCount": "↑ Rapidly",
+      "icon": "threads",
+      "color": "#ffffff",
+      "ariaLabel": "Follow Abhishek Gharpankar on Threads at joker_abhy"
+    }
+  ],
+  "brands": [
+    {
+      "name": "Adobe",
+      "logo": "img/ClientLogo/adobe.jpg",
+      "alt": "Adobe brand partnership with fitness influencer Abhishek Gharpankar joker_abhy",
+      "category": "Tech & Creative",
+      "link": "https://www.adobe.com",
+      "description": "Collaborated with Adobe on creative tools and digital content campaigns targeting fitness and lifestyle creators.",
+      "bgColor": "#FF0000"
+    },
+    {
+      "name": "Croma",
+      "logo": "img/ClientLogo/Croma.jpg",
+      "alt": "Croma Electronics brand collaboration with joker_abhy fitness creator",
+      "category": "Electronics Retail",
+      "link": "https://www.croma.com",
+      "description": "Partnered with Croma — India's largest electronics megastore — for product reviews and lifestyle integration campaigns.",
+      "bgColor": "#008080"
+    },
+    {
+      "name": "GNC",
+      "logo": "img/ClientLogo/GNC.png",
+      "alt": "GNC fitness supplements sponsored by Abhishek Gharpankar fitness influencer",
+      "category": "Fitness & Nutrition",
+      "link": "https://www.gnc.com",
+      "description": "Brand ambassador for GNC India, promoting premium fitness supplements and nutrition products to an engaged gym community.",
+      "bgColor": "#CC0000"
+    },
+    {
+      "name": "Muuchstac",
+      "logo": "img/ClientLogo/Muuchstac.png",
+      "alt": "Muuchstac grooming brand partnership with joker_abhy",
+      "category": "Men's Grooming",
+      "link": "https://www.muuchstac.com",
+      "description": "Sponsored grooming content series for Muuchstac — a leading men's beard and hair care brand in India.",
+      "bgColor": "#1a1a1a"
+    },
+    {
+      "name": "Oxy",
+      "logo": "img/ClientLogo/oxy.png",
+      "alt": "Oxy Only For Men brand collaboration with fitness influencer joker_abhy",
+      "category": "Men's Grooming",
+      "link": "https://www.oxyfacewash.com",
+      "description": "Collaborated with Oxy (Only For Men) for skincare and grooming content aligned with the active male lifestyle.",
+      "bgColor": "#111111"
+    }
+  ],
+  "gallery": [
+    {
+      "src": "img/AbhiPhotos/photo1.jpeg",
+      "alt": "Abhishek Gharpankar joker_abhy gym workout fitness photoshoot shirtless",
+      "caption": "Gym Session",
+      "loading": "lazy"
+    },
+    {
+      "src": "img/AbhiPhotos/photo2.jpeg",
+      "alt": "Abhishek Gharpankar joker_abhy outdoor fitness pose orange dhoti artistic shot",
+      "caption": "Raw Power",
+      "loading": "lazy"
+    },
+    {
+      "src": "img/AbhiPhotos/photo3.jpeg",
+      "alt": "Abhishek Gharpankar joker_abhy nature background fitness lifestyle photoshoot",
+      "caption": "Nature & Grind",
+      "loading": "lazy"
+    },
+    {
+      "src": "img/AbhiPhotos/hero.jfif",
+      "alt": "Abhishek Gharpankar joker_abhy dark gym cable machine workout silhouette",
+      "caption": "The Dark Horse",
+      "loading": "lazy"
+    }
+  ],
+  "contact": {
+    "email": "abhishek.sg2209@gmail.com",
+    "phone": "+919890247221",
+    "phoneDisplay": "+91 98902 47221",
+    "googleFormUrl": "https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform?embedded=true",
+    "formNote": "Replace YOUR_FORM_ID in data.json with your actual Google Form embed ID",
+    "ctaText": "Let's Collaborate",
+    "ctaSubText": "Open to brand deals, sponsored content, events & more."
+  },
+  "footer": {
+    "copyright": "© 2025 Abhishek Gharpankar. All rights reserved.",
+    "developer": "Made By Virendra Chavan",
+    "developerUrl": "#"
+  }
+}

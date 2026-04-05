@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <url>
+    <loc>https://joker-abhy.onrender.com/</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://joker-abhy.onrender.com/img/AbhiPhotos/hero.jpeg</image:loc>
+      <image:title>Abhishek Gharpankar joker_abhy fitness influencer hero photo</image:title>
+      <image:caption>Official portfolio hero image of Abhishek Gharpankar aka joker_abhy — fitness influencer India</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://joker-abhy.onrender.com/img/AbhiPhotos/photo1.jpeg</image:loc>
+      <image:title>Abhishek Gharpankar gym workout shirtless fitness photoshoot</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://joker-abhy.onrender.com/img/AbhiPhotos/photo2.jpeg</image:loc>
+      <image:title>Abhishek Gharpankar outdoor artistic fitness pose orange dhoti</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://joker-abhy.onrender.com/img/AbhiPhotos/photo3.jpeg</image:loc>
+      <image:title>Abhishek Gharpankar nature background lifestyle fitness photoshoot</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://joker-abhy.onrender.com/pages/affiliations.html</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://joker-abhy.onrender.com/img/ClientLogo/adobe.jpg</image:loc>
+      <image:title>Adobe brand partnership joker_abhy fitness influencer</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://joker-abhy.onrender.com/img/ClientLogo/GNC.png</image:loc>
+      <image:title>GNC fitness supplements collaboration Abhishek Gharpankar</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://joker-abhy.onrender.com/img/ClientLogo/Croma.jpg</image:loc>
+      <image:title>Croma Electronics brand deal joker_abhy</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://joker-abhy.onrender.com/img/ClientLogo/Muuchstac.png</image:loc>
+      <image:title>Muuchstac grooming sponsorship Abhishek Gharpankar</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://joker-abhy.onrender.com/img/ClientLogo/oxy.png</image:loc>
+      <image:title>Oxy Only For Men collaboration joker_abhy fitness creator</image:title>
+    </image:image>
+  </url>
+
+</urlset>
