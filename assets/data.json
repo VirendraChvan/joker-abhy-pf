@@ -13,7 +13,7 @@
   "seo": {
     "title": "Abhishek Gharpankar | joker_abhy — Fitness Influencer & Brand Partner",
     "description": "Official portfolio of Abhishek Gharpankar aka joker_abhy — Fitness, Food & Fashion creator with 5M+ monthly engagements. Partner with India's rising fitness influencer.",
-    "keywords": "Abhishek Gharpankar, joker_abhy, fitness influencer India, fitness content creator, gym influencer, brand collaboration, fitness brand partnership",
+    "keywords": "Abhishek Gharpankar, joker_abhy,joker abhi Gargoti,joker abhy Gargoti,joker abhi Kolhapur, joker abhy Kolhapur, fitness influencer Kolhapur, Most popular fitness influencer in Kolhapur, Best fitness influencer in Kolhapur, fitness influencer India, fitness content creator, gym influencer, brand collaboration, fitness brand partnership",
     "canonicalUrl": "https://joker-abhy.onrender.com",
     "ogTitle": "joker_abhy | Fitness. Food. Fashion.",
     "ogDescription": "5M+ monthly engagements. 50+ brand deals. One authentic fitness voice.",
@@ -156,7 +156,7 @@
     "email": "abhishek.sg2209@gmail.com",
     "phone": "+919890247221",
     "phoneDisplay": "+91 98902 47221",
-    "googleFormUrl": "https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform?embedded=true",
+    "googleFormUrl": "https://docs.google.com/forms/d/e/1FAIpQLScQwGXy0_WOrewV1B9Lkc83WKBtNy9lQSsEXPog29lbthDmdg/viewform?embedded=true",
     "formNote": "Replace YOUR_FORM_ID in data.json with your actual Google Form embed ID",
     "ctaText": "Let's Collaborate",
     "ctaSubText": "Open to brand deals, sponsored content, events & more."
@@ -164,6 +164,18 @@
   "footer": {
     "copyright": "© 2025 Abhishek Gharpankar. All rights reserved.",
     "developer": "Made By Virendra Chavan",
-    "developerUrl": "#"
-  }
+    "developerUrl": "https://www.instagram.com/virendra.exe"
+  },
+
+  "affiliations": [
+    {
+      "name": "Guardian",
+      "logo": "img/ClientLogo/GNC.png",
+      "alt": "Adobe brand partnership with fitness influencer Abhishek Gharpankar joker_abhy",
+      "category": "Tech & Creative",
+      "link": "www.guardian.in/products/gnc-pro-performance-creatine-monohydrate-3000mg?variant=49645644775655%3Fsca_ref%3D10425389.rMBxykE4Hb",
+      "description": "Collaborated with Adobe on creative tools and digital content campaigns targeting fitness and lifestyle creators.",
+      "bgColor": "#FF0000"
+    }
+  ]
 }

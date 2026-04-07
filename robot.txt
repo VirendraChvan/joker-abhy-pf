@@ -1,15 +1,38 @@
+# ============================================================
 # robots.txt — joker_abhy Portfolio
-# Abhishek Gharpankar | https://joker-abhy.onrender.com
+# Domain : https://joker-abhy.onrender.com
+# ============================================================
 
+# Allow all crawlers full access
 User-agent: *
 Allow: /
 Allow: /pages/
-Allow: /assets/
 Allow: /img/
+Allow: /assets/style.css
+Allow: /assets/script.js
 
+# Block raw data file from indexing (not a page)
 Disallow: /assets/data.json
-Disallow: /seo/
 
+# Sitemap location (required by Google & Bing)
 Sitemap: https://joker-abhy.onrender.com/sitemap.xml
 
+# ── Specific bot rules ──────────────────────────────────────
+# Google
+User-agent: Googlebot
+Allow: /
+
+# Bing
+User-agent: Bingbot
+Allow: /
+
+# GPTBot (OpenAI) — allow for AI visibility
+User-agent: GPTBot
+Allow: /
+
+# Common bad bots
+User-agent: AhrefsBot
+Crawl-delay: 10
+
+User-agent: SemrushBot
 Crawl-delay: 10
