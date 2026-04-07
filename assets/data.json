@@ -169,13 +169,13 @@
 
   "affiliations": [
     {
-      "name": "Guardian",
-      "logo": "img/ClientLogo/GNC.png",
-      "alt": "Adobe brand partnership with fitness influencer Abhishek Gharpankar joker_abhy",
-      "category": "Tech & Creative",
-      "link": "www.guardian.in/products/gnc-pro-performance-creatine-monohydrate-3000mg?variant=49645644775655%3Fsca_ref%3D10425389.rMBxykE4Hb",
-      "description": "Collaborated with Adobe on creative tools and digital content campaigns targeting fitness and lifestyle creators.",
-      "bgColor": "#FF0000"
-    }
+  "name": "Guardian GNC Pro Performance Creatine Monohydrate",
+  "logo": "img/Products/GNC_creatine.webp",
+  "alt": "Guardian GNC Pro Performance Creatine Monohydrate fitness supplement",
+  "category": "Health & Fitness",
+  "link": "https://www.guardian.in/products/gnc-pro-performance-creatine-monohydrate-3000mg?variant=49645644775655",
+  "description": "Promoted Guardian GNC Pro Performance Creatine Monohydrate, a high-quality creatine supplement designed to support muscle strength, improve workout performance, and enhance recovery for fitness enthusiasts and athletes.",
+  "bgColor": "#FF0000"
+}
   ]
 }
