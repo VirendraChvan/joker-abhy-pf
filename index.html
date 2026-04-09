@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr" itemscope itemtype="https://schema.org/ProfilePage">
+<html lang="en" dir="ltr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 
   <!-- ═══════════════════════════════════════════════════════
-       PRIMARY SEO — KOLHAPUR + SPONSOR FOCUSED
+       PRIMARY SEO META  (hardcoded — never overwritten by JS)
+       from: identity.fullName, page.title, page.description,
+             page.keywords, site.domain
        ═══════════════════════════════════════════════════════ -->
   <title>Abhishek Gharpankar (joker_abhy) | Fitness Influencer Kolhapur — Brand Sponsorship &amp; Collaboration</title>
   <meta name="description" content="Official portfolio of Abhishek Gharpankar aka joker_abhy — Kolhapur's top fitness, food &amp; fashion creator with 5M+ monthly engagements. Open for brand sponsorships, collaborations &amp; deals across India.">
@@ -18,66 +20,80 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <meta name="format-detection" content="telephone=no">
 
-  <!-- ── GEO META (local SEO — Kolhapur / Gargoti) ── -->
+  <!-- ── GEO META  (identity.location) ── -->
   <meta name="geo.region" content="IN-MH">
   <meta name="geo.placename" content="Kolhapur, Maharashtra, India">
   <meta name="geo.position" content="16.7050;74.2433">
   <meta name="ICBM" content="16.7050, 74.2433">
   <meta name="DC.coverage" content="Kolhapur, Maharashtra, India">
 
-  <!-- Canonical -->
+  <!-- Canonical  (site.domain) -->
   <link rel="canonical" href="https://joker-abhy.onrender.com/">
 
-  <!-- ── SEARCH ENGINE VERIFICATION ── -->
+  <!-- ── SEARCH ENGINE VERIFICATION  (site.googleVerification) ── -->
   <meta name="google-site-verification" content="fQH-SIUZmeGXvNcTaP0SnbD2Bzy6s91rzRWP9hls6Uc">
   <meta name="msvalidate.01" content="REPLACE_WITH_BING_VERIFICATION_CODE">
 
   <!-- ═══════════════════════════════════════════════════════
-       OPEN GRAPH
+       OPEN GRAPH  (page.ogTitle, page.ogDescription,
+                    identity.ogImage, site.domain)
        ═══════════════════════════════════════════════════════ -->
-  <meta property="og:title" content="joker_abhy | Kolhapur Fitness Influencer — Open for Brand Deals">
-  <meta property="og:description" content="5M+ monthly engagements. 50+ brand deals. Kolhapur's most authentic fitness voice. Contact for sponsorship.">
-  <meta property="og:image" content="https://joker-abhy.onrender.com/img/AbhiPhotos/hero.jpeg">
+  <meta property="og:title"            content="joker_abhy | Kolhapur Fitness Influencer — Open for Brand Deals">
+  <meta property="og:description"      content="5M+ monthly engagements. 50+ brand deals. Kolhapur's most authentic fitness voice. Contact for sponsorship.">
+  <meta property="og:image"            content="https://joker-abhy.onrender.com/img/AbhiPhotos/hero.jpeg">
   <meta property="og:image:secure_url" content="https://joker-abhy.onrender.com/img/AbhiPhotos/hero.jpeg">
-  <meta property="og:image:type" content="image/jpeg">
-  <meta property="og:image:width" content="1080">
-  <meta property="og:image:height" content="1350">
-  <meta property="og:image:alt" content="Abhishek Gharpankar joker_abhy fitness influencer Kolhapur gym portrait">
-  <meta property="og:type" content="profile">
-  <meta property="og:url" content="https://joker-abhy.onrender.com/">
-  <meta property="og:site_name" content="joker_abhy — Abhishek Gharpankar">
-  <meta property="og:locale" content="en_IN">
-  <meta property="profile:first_name" content="Abhishek">
-  <meta property="profile:last_name" content="Gharpankar">
-  <meta property="profile:username" content="joker_abhy">
+  <meta property="og:image:type"       content="image/jpeg">
+  <meta property="og:image:width"      content="1080">
+  <meta property="og:image:height"     content="1350">
+  <meta property="og:image:alt"        content="Abhishek Gharpankar joker_abhy fitness influencer Kolhapur gym portrait">
+  <meta property="og:type"             content="profile">
+  <meta property="og:url"              content="https://joker-abhy.onrender.com/">
+  <meta property="og:site_name"        content="joker_abhy — Abhishek Gharpankar">
+  <meta property="og:locale"           content="en_IN">
+  <meta property="profile:first_name"  content="Abhishek">
+  <meta property="profile:last_name"   content="Gharpankar">
+  <meta property="profile:username"    content="joker_abhy">
 
   <!-- ═══════════════════════════════════════════════════════
-       TWITTER / X CARD
+       TWITTER / X CARD  (page.twitterCard, page.ogTitle)
        ═══════════════════════════════════════════════════════ -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:site" content="@joker_abhy">
-  <meta name="twitter:creator" content="@joker_abhy">
-  <meta name="twitter:title" content="joker_abhy | Kolhapur Fitness Influencer — Open for Brand Deals">
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:site"        content="@joker_abhy">
+  <meta name="twitter:creator"     content="@joker_abhy">
+  <meta name="twitter:title"       content="joker_abhy | Kolhapur Fitness Influencer — Open for Brand Deals">
   <meta name="twitter:description" content="5M+ monthly engagements. 50+ brand deals. Kolhapur's most authentic fitness voice.">
-  <meta name="twitter:image" content="https://joker-abhy.onrender.com/img/AbhiPhotos/hero.jpeg">
-  <meta name="twitter:image:alt" content="Abhishek Gharpankar joker_abhy fitness influencer Kolhapur portrait">
+  <meta name="twitter:image"       content="https://joker-abhy.onrender.com/img/AbhiPhotos/hero.jpeg">
+  <meta name="twitter:image:alt"   content="Abhishek Gharpankar joker_abhy fitness influencer Kolhapur portrait">
 
   <!-- ═══════════════════════════════════════════════════════
        JSON-LD STRUCTURED DATA
-       ProfilePage + Person + LocalBusiness(area) + ItemList
+       Sources:  site.*  identity.*  page.*  contact.*
+       Types:    WebSite · ProfilePage · Person · ItemList
+       ─────────────────────────────────────────────────────
+       FIX: Single clean @graph block.
+            No conflicting itemscope on <html> or <body>.
+            No hidden display:none microdata spans.
+            Added dateModified (required for enhancements).
+            Added publisher to WebSite (required for rich results).
+            Image uses absolute URL only.
        ═══════════════════════════════════════════════════════ -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@graph": [
+
       {
         "@type": "WebSite",
         "@id": "https://joker-abhy.onrender.com/#website",
         "url": "https://joker-abhy.onrender.com/",
         "name": "joker_abhy — Abhishek Gharpankar",
         "description": "Official portfolio of Kolhapur fitness influencer Abhishek Gharpankar aka joker_abhy — open for brand sponsorships",
-        "inLanguage": "en-IN"
+        "inLanguage": "en-IN",
+        "publisher": {
+          "@id": "https://joker-abhy.onrender.com/#person"
+        }
       },
+
       {
         "@type": "ProfilePage",
         "@id": "https://joker-abhy.onrender.com/#profilepage",
@@ -85,6 +101,8 @@
         "name": "Abhishek Gharpankar (joker_abhy) — Fitness Influencer Kolhapur | Brand Sponsorship",
         "description": "Official portfolio of Abhishek Gharpankar aka joker_abhy — Kolhapur's top fitness, food & fashion creator with 5M+ monthly engagements. Open for brand sponsorships and collaborations.",
         "inLanguage": "en-IN",
+        "dateCreated": "2025-01-01",
+        "dateModified": "2025-04-09",
         "isPartOf": { "@id": "https://joker-abhy.onrender.com/#website" },
         "breadcrumb": {
           "@type": "BreadcrumbList",
@@ -92,55 +110,71 @@
             { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://joker-abhy.onrender.com/" }
           ]
         },
-        "mainEntity": {
-          "@type": "Person",
-          "@id": "https://joker-abhy.onrender.com/#person",
-          "name": "Abhishek Gharpankar",
-          "alternateName": ["joker_abhy", "joker abhi", "abhi joker", "joker abhi Kolhapur", "joker abhy Kolhapur", "joker abhi Gargoti"],
-          "description": "Kolhapur's most popular fitness content creator and lifestyle influencer. Brand ambassador with 5M+ monthly engagements across Instagram, YouTube and Threads. Based in Gargoti, Kolhapur District, Maharashtra. Open for brand sponsorships, fitness product deals and collaborative campaigns.",
-          "url": "https://joker-abhy.onrender.com",
-          "image": {
-            "@type": "ImageObject",
-            "url": "https://joker-abhy.onrender.com/img/AbhiPhotos/hero.jpeg",
-            "width": 1080,
-            "height": 1350,
-            "caption": "Abhishek Gharpankar joker_abhy — Kolhapur fitness influencer official portrait"
-          },
-          "email": "abhishek.sg2209@gmail.com",
-          "telephone": "+919890247221",
-          "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Gargoti",
-            "addressRegion": "Kolhapur District, Maharashtra",
-            "addressCountry": "IN"
-          },
-          "homeLocation": {
-            "@type": "Place",
-            "name": "Kolhapur, Maharashtra, India",
-            "geo": {
-              "@type": "GeoCoordinates",
-              "latitude": "16.7050",
-              "longitude": "74.2433"
-            }
-          },
-          "nationality": { "@type": "Country", "name": "India" },
-          "knowsAbout": ["Fitness", "Bodybuilding", "Nutrition", "Fashion", "Food", "Content Creation", "Brand Sponsorships", "Social Media Marketing", "Gym Training"],
-          "hasOccupation": {
-            "@type": "Occupation",
-            "name": "Fitness Influencer & Brand Ambassador",
-            "occupationLocation": {
-              "@type": "Place",
-              "name": "Kolhapur, Maharashtra, India"
-            },
-            "description": "Fitness and lifestyle content creator across Instagram, YouTube and Threads. Brand ambassador and sponsored content creator with 5M+ monthly engagements. Available for brand deals and sponsorships."
-          },
-          "sameAs": [
-            "https://www.instagram.com/joker_abhy",
-            "https://www.youtube.com/@joker__abhy",
-            "https://www.threads.com/@joker_abhy"
-          ]
-        }
+        "mainEntity": { "@id": "https://joker-abhy.onrender.com/#person" }
       },
+
+      {
+        "@type": "Person",
+        "@id": "https://joker-abhy.onrender.com/#person",
+        "name": "Abhishek Gharpankar",
+        "alternateName": [
+          "joker_abhy",
+          "joker abhi",
+          "abhi joker",
+          "joker abhi Kolhapur",
+          "joker abhy Kolhapur",
+          "joker abhi Gargoti",
+          "joker abhy Gargoti"
+        ],
+        "description": "Kolhapur's most popular fitness content creator and lifestyle influencer. Brand ambassador with 5M+ monthly engagements across Instagram, YouTube and Threads. Based in Gargoti, Kolhapur District, Maharashtra. Open for brand sponsorships, fitness product deals and collaborative campaigns.",
+        "url": "https://joker-abhy.onrender.com",
+        "image": {
+          "@type": "ImageObject",
+          "url": "https://joker-abhy.onrender.com/img/AbhiPhotos/hero.jpeg",
+          "width": 1080,
+          "height": 1350,
+          "caption": "Abhishek Gharpankar joker_abhy — Kolhapur fitness influencer official portrait"
+        },
+        "email": "abhishek.sg2209@gmail.com",
+        "telephone": "+919890247221",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Gargoti",
+          "addressLocality": "Gargoti",
+          "addressRegion": "Kolhapur",
+          "addressCountry": "IN"
+        },
+        "homeLocation": {
+          "@type": "Place",
+          "name": "Kolhapur, Maharashtra, India",
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "16.7050",
+            "longitude": "74.2433"
+          }
+        },
+        "nationality": { "@type": "Country", "name": "India" },
+        "knowsAbout": [
+          "Fitness", "Bodybuilding", "Nutrition", "Fashion",
+          "Food", "Content Creation", "Brand Sponsorships",
+          "Social Media Marketing", "Gym Training"
+        ],
+        "hasOccupation": {
+          "@type": "Occupation",
+          "name": "Fitness Influencer & Brand Ambassador",
+          "occupationLocation": {
+            "@type": "Place",
+            "name": "Kolhapur, Maharashtra, India"
+          },
+          "description": "Fitness and lifestyle content creator across Instagram, YouTube and Threads with 5M+ monthly engagements. Available for brand sponsorships and deals."
+        },
+        "sameAs": [
+          "https://www.instagram.com/joker_abhy",
+          "https://www.youtube.com/@joker__abhy",
+          "https://www.threads.com/@joker_abhy"
+        ]
+      },
+
       {
         "@type": "ItemList",
         "@id": "https://joker-abhy.onrender.com/#brandlist",
@@ -148,13 +182,14 @@
         "description": "Top brand deals and sponsorships of Kolhapur fitness influencer joker_abhy",
         "numberOfItems": 5,
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "item": { "@type": "Organization", "name": "Adobe", "url": "https://www.adobe.com", "logo": "https://joker-abhy.onrender.com/img/ClientLogo/adobe.jpg" } },
-          { "@type": "ListItem", "position": 2, "item": { "@type": "Organization", "name": "Croma", "url": "https://www.croma.com", "logo": "https://joker-abhy.onrender.com/img/ClientLogo/Croma.jpg" } },
-          { "@type": "ListItem", "position": 3, "item": { "@type": "Organization", "name": "GNC", "url": "https://www.gnc.com", "logo": "https://joker-abhy.onrender.com/img/ClientLogo/GNC.png" } },
-          { "@type": "ListItem", "position": 4, "item": { "@type": "Organization", "name": "Muuchstac", "url": "https://www.muuchstac.com", "logo": "https://joker-abhy.onrender.com/img/ClientLogo/Muuchstac.png" } },
-          { "@type": "ListItem", "position": 5, "item": { "@type": "Organization", "name": "Oxy Only For Men", "url": "https://www.oxyfacewash.com", "logo": "https://joker-abhy.onrender.com/img/ClientLogo/oxy.png" } }
+          { "@type": "ListItem", "position": 1, "item": { "@type": "Organization", "name": "Adobe",         "url": "https://www.adobe.com",           "logo": "https://joker-abhy.onrender.com/img/ClientLogo/adobe.jpg"     } },
+          { "@type": "ListItem", "position": 2, "item": { "@type": "Organization", "name": "Croma",         "url": "https://www.croma.com",            "logo": "https://joker-abhy.onrender.com/img/ClientLogo/Croma.jpg"     } },
+          { "@type": "ListItem", "position": 3, "item": { "@type": "Organization", "name": "GNC",           "url": "https://www.gnc.com",              "logo": "https://joker-abhy.onrender.com/img/ClientLogo/GNC.png"       } },
+          { "@type": "ListItem", "position": 4, "item": { "@type": "Organization", "name": "Muuchstac",     "url": "https://www.muuchstac.com",        "logo": "https://joker-abhy.onrender.com/img/ClientLogo/Muuchstac.png" } },
+          { "@type": "ListItem", "position": 5, "item": { "@type": "Organization", "name": "Oxy Only For Men", "url": "https://www.oxyfacewash.com",  "logo": "https://joker-abhy.onrender.com/img/ClientLogo/oxy.png"       } }
         ]
       }
+
     ]
   }
   </script>
@@ -179,17 +214,13 @@
   <link rel="stylesheet" href="assets/style.css">
 </head>
 
-<body itemscope itemtype="https://schema.org/Person" itemid="https://joker-abhy.onrender.com/#person">
-
-  <!-- Hidden microdata for crawlers -->
-  <span itemprop="name" style="display:none">Abhishek Gharpankar</span>
-  <span itemprop="alternateName" style="display:none">joker_abhy</span>
-  <span itemprop="jobTitle" style="display:none">Fitness Influencer & Brand Ambassador</span>
-  <span itemprop="addressLocality" style="display:none">Kolhapur</span>
-  <span itemprop="addressRegion" style="display:none">Maharashtra</span>
-  <span itemprop="addressCountry" style="display:none">India</span>
-  <meta itemprop="email" content="abhishek.sg2209@gmail.com">
-  <meta itemprop="telephone" content="+919890247221">
+<!--
+  FIX: Removed itemscope/itemtype from <body>.
+  Conflicting microdata on <body> alongside JSON-LD in <head>
+  caused the "has issues" warning in Google Search Console.
+  JSON-LD in <head> is the single authoritative source.
+-->
+<body>
 
   <!-- Custom Cursor -->
   <div class="cursor-dot" aria-hidden="true"></div>
@@ -203,22 +234,23 @@
       joker<span>_</span>abhy
     </a>
     <ul class="nav-links" role="menubar">
-      <li role="none"><a href="#socials" role="menuitem">Stats</a></li>
-      <li role="none"><a href="#brands" role="menuitem">Brands</a></li>
-      <li role="none"><a href="#gallery" role="menuitem">Gallery</a></li>
+      <li role="none"><a href="#socials"              role="menuitem">Stats</a></li>
+      <li role="none"><a href="#brands"               role="menuitem">Brands</a></li>
+      <li role="none"><a href="#gallery"              role="menuitem">Gallery</a></li>
       <li role="none"><a href="pages/affiliations.html" role="menuitem">Affiliations</a></li>
       <li role="none"><a href="#contact" class="nav-cta" role="menuitem">Collaborate &#x2197;</a></li>
     </ul>
-    <button class="nav-hamburger" id="hamburger" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="mobile-menu">
+    <button class="nav-hamburger" id="hamburger"
+            aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="mobile-menu">
       <span></span><span></span><span></span>
     </button>
   </nav>
 
   <!-- Mobile Menu -->
   <nav class="nav-mobile-menu" id="mobile-menu" aria-label="Mobile navigation" aria-hidden="true">
-    <a href="#socials" class="mobile-link">Stats</a>
-    <a href="#brands" class="mobile-link">Brands</a>
-    <a href="#gallery" class="mobile-link">Gallery</a>
+    <a href="#socials"              class="mobile-link">Stats</a>
+    <a href="#brands"               class="mobile-link">Brands</a>
+    <a href="#gallery"              class="mobile-link">Gallery</a>
     <a href="pages/affiliations.html" class="mobile-link">Affiliations</a>
     <a href="#contact" class="nav-cta mobile-link">Collaborate &#x2197;</a>
   </nav>
@@ -226,17 +258,17 @@
   <!-- ══════════════════════════════════════════════════════
        SECTION 1 — HERO
        ══════════════════════════════════════════════════════ -->
-  <section id="hero" aria-label="Abhishek Gharpankar joker_abhy — Fitness Influencer Kolhapur Hero">
+  <section id="hero" aria-label="Abhishek Gharpankar joker_abhy — Fitness Influencer Kolhapur">
 
     <div class="hero-content">
-      <div class="hero-tag" aria-label="Location and category">Kolhapur's Fitness Content Creator</div>
+      <div class="hero-tag">Kolhapur's Fitness Content Creator</div>
 
-      <h1 class="hero-name" itemprop="name">
+      <h1 class="hero-name">
         <span id="hero-name-first">Abhishek</span><br>
         <span id="hero-name-last" class="accent">Gharpankar</span>
       </h1>
 
-      <p class="hero-alias" id="hero-alias" aria-label="Social media handle joker_abhy" itemprop="alternateName">@joker_abhy</p>
+      <p class="hero-alias" id="hero-alias" aria-label="Social media handle joker_abhy">@joker_abhy</p>
 
       <div class="hero-niche" id="hero-niche" aria-label="Content niches: Fitness, Food, Fashion">
         <span class="niche-pill">Fitness</span>
@@ -244,25 +276,28 @@
         <span class="niche-pill">Fashion</span>
       </div>
 
-      <p class="hero-bio" id="hero-bio" itemprop="description">
+      <p class="hero-bio" id="hero-bio">
         I turn discipline into content and content into culture. From the grind of the gym floor to the lens of a brand campaign — this is authentic fitness, lived and shared.
       </p>
 
-      <!-- Sponsor CTA — primary conversion action -->
       <div class="hero-actions">
-        <a href="#contact" class="btn-primary" aria-label="Contact Abhishek Gharpankar for brand sponsorship or collaboration">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+        <a href="#contact" class="btn-primary"
+           aria-label="Contact Abhishek Gharpankar for brand sponsorship or collaboration">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+               stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+               stroke-linejoin="round" aria-hidden="true" focusable="false">
             <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
           </svg>
           Get Sponsorship Deal
         </a>
-        <a href="#gallery" class="btn-secondary" aria-label="View Abhishek Gharpankar's fitness photo portfolio">
+        <a href="#gallery" class="btn-secondary"
+           aria-label="View Abhishek Gharpankar's fitness photo portfolio">
           View Work &#x2193;
         </a>
       </div>
     </div>
 
-    <!-- Hero Image — LCP element -->
+    <!-- LCP image — absolute no JS override -->
     <div class="hero-visual">
       <img
         id="hero-img"
@@ -272,7 +307,6 @@
         height="1350"
         fetchpriority="high"
         decoding="async"
-        itemprop="image"
       >
       <div class="hero-img-overlay" aria-hidden="true"></div>
       <div class="hero-side-stat" aria-label="5 million plus monthly engagements across all platforms">
@@ -288,7 +322,8 @@
   <!-- ══════════════════════════════════════════════════════
        SECTION 2 — STATS & SOCIALS
        ══════════════════════════════════════════════════════ -->
-  <section id="socials" aria-label="Social media statistics and platforms of Abhishek Gharpankar joker_abhy Kolhapur">
+  <section id="socials"
+    aria-label="Social media statistics and platforms of Abhishek Gharpankar joker_abhy Kolhapur">
     <div class="socials-inner">
 
       <div class="socials-header">
@@ -296,11 +331,15 @@
           <p class="section-label">By The Numbers</p>
           <h2 class="section-title reveal">The<br>Numbers</h2>
           <p class="reveal" style="color:var(--grey-light); max-width:380px; line-height:1.8; font-size:0.95rem;">
-            Why brands choose joker_abhy — raw metrics from Kolhapur's most engaged fitness creator. 5M+ monthly reach, 50+ successful sponsorships.
+            Why brands choose joker_abhy — raw metrics from Kolhapur's most engaged fitness creator.
+            5M+ monthly reach, 50+ successful sponsorships.
           </p>
         </div>
 
-        <div id="stats-grid" class="stats-grid" role="list" aria-label="Key performance metrics for brand managers">
+        <!-- Stats populated by script.js from data.json -->
+        <div id="stats-grid" class="stats-grid" role="list"
+             aria-label="Key performance metrics for brand managers">
+          <!-- fallback content -->
           <div class="stat-card" aria-label="5 million plus monthly engagements">
             <div class="stat-icon" aria-hidden="true">&#x1F525;</div>
             <div class="stat-value">5M+</div>
@@ -311,7 +350,7 @@
             <div class="stat-value">50+</div>
             <div class="stat-label">Brand Sponsorships</div>
           </div>
-          <div class="stat-card" aria-label="Number one fitness niche creator Kolhapur">
+          <div class="stat-card" aria-label="Number one fitness creator Kolhapur">
             <div class="stat-icon" aria-hidden="true">&#x1F4AA;</div>
             <div class="stat-value">#1</div>
             <div class="stat-label">Kolhapur Fitness</div>
@@ -325,7 +364,8 @@
       </div>
 
       <p class="section-label" style="margin-bottom:1.2rem">Find Me On</p>
-      <div id="socials-grid" class="socials-grid" role="list" aria-label="Social media platforms of joker_abhy Abhishek Gharpankar">
+      <div id="socials-grid" class="socials-grid" role="list"
+           aria-label="Social media platforms of joker_abhy Abhishek Gharpankar">
       </div>
 
     </div>
@@ -334,53 +374,52 @@
   <!-- ══════════════════════════════════════════════════════
        SECTION 3 — BRAND CAROUSEL
        ══════════════════════════════════════════════════════ -->
-  <section id="brands" aria-label="Brand sponsorships and partnerships of Kolhapur fitness influencer Abhishek Gharpankar joker_abhy">
+  <section id="brands"
+    aria-label="Brand sponsorships of Kolhapur fitness influencer Abhishek Gharpankar joker_abhy">
     <div class="brands-inner">
-
       <div class="brands-header">
         <div>
           <p class="section-label">Trusted By</p>
           <h2 class="section-title reveal">Brand<br>Sponsors</h2>
           <p class="reveal" style="color:var(--grey-light); max-width:420px; line-height:1.8; font-size:0.95rem;">
-            From fitness supplements to tech giants — Abhishek has completed 50+ brand sponsorships across fitness, grooming, electronics and creative tech. Your brand could be next.
+            From fitness supplements to tech giants — Abhishek has completed 50+ brand sponsorships
+            across fitness, grooming, electronics and creative tech. Your brand could be next.
           </p>
         </div>
         <div class="brands-count reveal" aria-label="50 plus brand sponsorships completed">50+</div>
       </div>
-
     </div>
 
-    <div class="carousel-wrapper" aria-label="Infinite scrolling brand sponsor logo carousel — hover to pause">
+    <div class="carousel-wrapper"
+         aria-label="Infinite scrolling brand sponsor logo carousel — hover to pause">
       <div id="carousel-track" class="carousel-track" role="list" aria-label="Brand sponsor logos">
       </div>
     </div>
-
   </section>
 
   <!-- ══════════════════════════════════════════════════════
        SECTION 4 — PHOTO GALLERY
        ══════════════════════════════════════════════════════ -->
-  <section id="gallery" aria-label="Fitness and lifestyle photo portfolio of Abhishek Gharpankar joker_abhy Kolhapur">
+  <section id="gallery"
+    aria-label="Fitness and lifestyle photo portfolio of Abhishek Gharpankar joker_abhy Kolhapur">
     <div class="gallery-inner">
-
       <div class="gallery-header">
         <p class="section-label">Portfolio</p>
         <h2 class="section-title reveal">The<br>Visuals</h2>
       </div>
-
-      <div id="gallery-grid" class="gallery-grid" role="list" aria-label="Fitness lifestyle photography portfolio of joker_abhy Kolhapur">
+      <div id="gallery-grid" class="gallery-grid" role="list"
+           aria-label="Fitness lifestyle photography portfolio of joker_abhy Kolhapur">
       </div>
-
     </div>
   </section>
 
   <!-- ══════════════════════════════════════════════════════
        SECTION 5 — CONTACT / SPONSOR
        ══════════════════════════════════════════════════════ -->
-  <section id="contact" aria-label="Contact Abhishek Gharpankar joker_abhy for brand sponsorship Kolhapur">
+  <section id="contact"
+    aria-label="Contact Abhishek Gharpankar joker_abhy for brand sponsorship Kolhapur">
     <div class="contact-inner">
 
-      <!-- Left: Contact Info -->
       <div class="contact-info reveal">
         <p class="section-label">Get A Sponsorship Deal</p>
         <h2 class="contact-cta-head">
@@ -392,55 +431,61 @@
 
         <div class="contact-details">
 
-          <!-- Email -->
           <div class="contact-detail-row">
             <div class="contact-detail-icon" aria-hidden="true">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                   stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
                 <polyline points="22,6 12,13 2,6"/>
               </svg>
             </div>
             <div>
               <div class="contact-detail-label">Email</div>
-              <a id="contact-email-link" href="mailto:abhishek.sg2209@gmail.com" class="contact-detail-value" aria-label="Email Abhishek Gharpankar for brand sponsorship at abhishek.sg2209@gmail.com" itemprop="email">
+              <a id="contact-email-link"
+                 href="mailto:abhishek.sg2209@gmail.com"
+                 class="contact-detail-value"
+                 aria-label="Email Abhishek Gharpankar for brand sponsorship">
                 abhishek.sg2209@gmail.com
               </a>
             </div>
           </div>
 
-          <!-- Phone / WhatsApp -->
           <div class="contact-detail-row">
             <div class="contact-detail-icon" aria-hidden="true">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                   stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.39 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.81a16 16 0 0 0 6.29 6.29l.95-.95a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
               </svg>
             </div>
             <div>
               <div class="contact-detail-label">Phone / WhatsApp</div>
-              <a id="contact-phone-link" href="tel:+919890247221" class="contact-detail-value" aria-label="Call or WhatsApp Abhishek Gharpankar for sponsorship inquiry" itemprop="telephone">
+              <a id="contact-phone-link"
+                 href="tel:+919890247221"
+                 class="contact-detail-value"
+                 aria-label="Call or WhatsApp Abhishek Gharpankar for sponsorship inquiry">
                 +91 98902 47221
               </a>
             </div>
           </div>
 
-          <!-- Location -->
           <div class="contact-detail-row">
             <div class="contact-detail-icon" aria-hidden="true">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                   stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
                 <circle cx="12" cy="10" r="3"/>
               </svg>
             </div>
             <div>
               <div class="contact-detail-label">Base</div>
-              <div class="contact-detail-value" itemprop="addressLocality">Kolhapur, Maharashtra, India</div>
+              <div class="contact-detail-value">Kolhapur, Maharashtra, India</div>
             </div>
           </div>
 
-          <!-- Response Time -->
           <div class="contact-detail-row">
             <div class="contact-detail-icon" aria-hidden="true">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                   stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <circle cx="12" cy="12" r="10"/>
                 <polyline points="12 6 12 12 16 14"/>
               </svg>
@@ -451,14 +496,13 @@
             </div>
           </div>
 
-        </div>
+        </div><!-- /.contact-details -->
 
-        <div id="contact-socials" class="contact-socials" aria-label="Social media links for joker_abhy">
+        <div id="contact-socials" class="contact-socials"
+             aria-label="Social media links for joker_abhy">
         </div>
-
       </div>
 
-      <!-- Right: Google Form -->
       <div class="contact-form-wrap reveal">
         <div class="form-header">
           <div class="form-header-dot" aria-hidden="true"></div>
@@ -468,12 +512,9 @@
           <iframe
             id="google-form"
             src="https://docs.google.com/forms/d/e/1FAIpQLScQwGXy0_WOrewV1B9Lkc83WKBtNy9lQSsEXPog29lbthDmdg/viewform?embedded=true"
-            frameborder="0"
-            marginheight="0"
-            marginwidth="0"
-            scrolling="yes"
-            title="Brand sponsorship and collaboration inquiry form for Abhishek Gharpankar joker_abhy Kolhapur"
-            aria-label="Contact form for brand sponsorship inquiries with joker_abhy Kolhapur fitness influencer"
+            frameborder="0" marginheight="0" marginwidth="0" scrolling="yes"
+            title="Brand sponsorship inquiry form for Abhishek Gharpankar joker_abhy Kolhapur"
+            aria-label="Contact form for brand sponsorship with joker_abhy Kolhapur"
             loading="lazy"
           >
             Loading form&hellip;
@@ -489,19 +530,17 @@
        ══════════════════════════════════════════════════════ -->
   <footer role="contentinfo">
     <div class="footer-inner">
-
       <div class="footer-logo" aria-label="joker_abhy — Abhishek Gharpankar Kolhapur">
         joker<span>_</span>abhy
       </div>
-
       <p class="footer-copy" id="footer-copy">
         &copy; 2025 Abhishek Gharpankar. All rights reserved.
       </p>
-
       <p class="footer-credit" id="footer-credit">
-        <a href="https://www.instagram.com/virendra.exe" target="_blank" rel="nofollow noopener">Made By Virendra Chavan</a>
+        <a href="https://www.instagram.com/virendra.exe" target="_blank" rel="nofollow noopener">
+          Made By Virendra Chavan
+        </a>
       </p>
-
     </div>
   </footer>
 

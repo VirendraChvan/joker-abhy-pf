@@ -1,39 +1,4 @@
 {
-  "site": {
-    "domain": "https://joker-abhy.onrender.com",
-    "googleVerification": "fQH-SIUZmeGXvNcTaP0SnbD2Bzy6s91rzRWP9hls6Uc",
-    "bingVerification": "REPLACE_WITH_BING_VERIFICATION_CODE"
-  },
-
-  "identity": {
-    "fullName": "Abhishek Gharpankar",
-    "aliases": ["joker_abhy", "joker abhi", "abhi joker", "joker"],
-    "primaryAlias": "joker_abhy",
-    "tagline": "Fitness. Food. Fashion.",
-    "bio": "I turn discipline into content and content into culture. From the grind of the gym floor to the lens of a brand campaign — this is authentic fitness, lived and shared.",
-    "niche": ["Fitness", "Food", "Fashion"],
-    "location": {
-      "city": "Kolhapur",
-      "district": "Kolhapur",
-      "state": "Maharashtra",
-      "country": "India",
-      "hometown": "Gargoti, Kolhapur District, Maharashtra"
-    },
-    "heroImage": "img/AbhiPhotos/hero.jpeg",
-    "heroImageAlt": "Abhishek Gharpankar joker_abhy fitness influencer Kolhapur gym portrait — available for brand sponsorship",
-    "ogImage": "img/AbhiPhotos/hero.jpeg"
-  },
-
-  "page": {
-    "title": "Abhishek Gharpankar (joker_abhy) | Fitness Influencer Kolhapur — Brand Sponsorship & Collaboration",
-    "description": "Official portfolio of Abhishek Gharpankar aka joker_abhy — Kolhapur's top fitness, food & fashion creator with 5M+ monthly engagements. Open for brand sponsorships, collaborations & deals across India.",
-    "keywords": "Abhishek Gharpankar, joker_abhy, joker abhi Gargoti, joker abhy Gargoti, joker abhi Kolhapur, joker abhy Kolhapur, fitness influencer Kolhapur, most popular fitness influencer Kolhapur, best fitness influencer Kolhapur, fitness influencer Gargoti, fitness content creator Maharashtra, gym influencer India, brand collaboration India, fitness brand sponsorship India, Instagram fitness influencer India, fitness influencer brand deals",
-    "ogTitle": "joker_abhy | Kolhapur Fitness Influencer — Open for Brand Deals",
-    "ogDescription": "5M+ monthly engagements. 50+ brand deals. Kolhapur's most authentic fitness voice. Contact for sponsorship.",
-    "twitterCard": "summary_large_image",
-    "author": "Abhishek Gharpankar"
-  },
-
   "stats": [
     {
       "label": "Monthly Engagements",
@@ -48,7 +13,7 @@
       "ariaLabel": "Over 50 brand sponsorships completed"
     },
     {
-      "label": "Fitness Niche",
+      "label": "Kolhapur Fitness",
       "value": "#1",
       "icon": "💪",
       "ariaLabel": "Number one fitness content creator in Kolhapur"
@@ -92,11 +57,10 @@
     {
       "name": "Adobe",
       "logo": "img/ClientLogo/adobe.jpg",
-      "alt": "Adobe brand partnership with fitness influencer Abhishek Gharpankar joker_abhy Kolhapur",
+      "alt": "Adobe brand sponsorship with fitness influencer Abhishek Gharpankar joker_abhy Kolhapur",
       "category": "Tech & Creative",
       "link": "https://www.adobe.com",
-      "description": "Collaborated with Adobe on creative tools and digital content campaigns targeting fitness and lifestyle creators.",
-      "bgColor": "#FF0000"
+      "description": "Collaborated with Adobe on creative tools and digital content campaigns targeting fitness and lifestyle creators."
     },
     {
       "name": "Croma",
@@ -104,17 +68,15 @@
       "alt": "Croma Electronics brand collaboration with joker_abhy fitness creator Maharashtra",
       "category": "Electronics Retail",
       "link": "https://www.croma.com",
-      "description": "Partnered with Croma — India's largest electronics megastore — for product reviews and lifestyle integration campaigns.",
-      "bgColor": "#008080"
+      "description": "Partnered with Croma — India's largest electronics megastore — for product reviews and lifestyle integration campaigns."
     },
     {
       "name": "GNC",
       "logo": "img/ClientLogo/GNC.png",
-      "alt": "GNC fitness supplements sponsored by Abhishek Gharpankar joker_abhy fitness influencer India",
+      "alt": "GNC fitness supplements sponsored by Abhishek Gharpankar joker_abhy Kolhapur fitness influencer",
       "category": "Fitness & Nutrition",
       "link": "https://www.gnc.com",
-      "description": "Brand ambassador for GNC India, promoting premium fitness supplements and nutrition products to an engaged gym community.",
-      "bgColor": "#CC0000"
+      "description": "Brand ambassador for GNC India, promoting premium fitness supplements and nutrition products to an engaged gym community."
     },
     {
       "name": "Muuchstac",
@@ -122,8 +84,7 @@
       "alt": "Muuchstac grooming brand partnership with joker_abhy Kolhapur fitness influencer",
       "category": "Men's Grooming",
       "link": "https://www.muuchstac.com",
-      "description": "Sponsored grooming content series for Muuchstac — a leading men's beard and hair care brand in India.",
-      "bgColor": "#1a1a1a"
+      "description": "Sponsored grooming content series for Muuchstac — a leading men's beard and hair care brand in India."
     },
     {
       "name": "Oxy",
@@ -131,8 +92,7 @@
       "alt": "Oxy Only For Men brand collaboration with fitness influencer joker_abhy Maharashtra",
       "category": "Men's Grooming",
       "link": "https://www.oxyfacewash.com",
-      "description": "Collaborated with Oxy (Only For Men) for skincare and grooming content aligned with the active male lifestyle.",
-      "bgColor": "#111111"
+      "description": "Collaborated with Oxy (Only For Men) for skincare and grooming content aligned with the active male lifestyle."
     }
   ],
 
@@ -169,7 +129,6 @@
     "phoneDisplay": "+91 98902 47221",
     "location": "Kolhapur, Maharashtra, India",
     "googleFormUrl": "https://docs.google.com/forms/d/e/1FAIpQLScQwGXy0_WOrewV1B9Lkc83WKBtNy9lQSsEXPog29lbthDmdg/viewform?embedded=true",
-    "ctaText": "Let's Collaborate",
     "ctaSubText": "Open to brand deals, sponsored content, events & more."
   },
 
@@ -186,8 +145,7 @@
       "alt": "Guardian GNC Pro Performance Creatine Monohydrate promoted by joker_abhy Kolhapur fitness influencer",
       "category": "Health & Fitness",
       "link": "https://www.guardian.in/products/gnc-pro-performance-creatine-monohydrate-3000mg?variant=49645644775655",
-      "description": "Promoted Guardian GNC Pro Performance Creatine Monohydrate — a high-quality creatine supplement for muscle strength, workout performance, and recovery. Recommended by Abhishek Gharpankar for serious fitness enthusiasts.",
-      "bgColor": "#CC0000"
+      "description": "Promoted Guardian GNC Pro Performance Creatine Monohydrate — a high-quality creatine supplement for muscle strength, workout performance, and recovery. Recommended by Abhishek Gharpankar for serious fitness enthusiasts."
     }
   ]
 }
