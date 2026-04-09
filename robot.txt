@@ -11,28 +11,35 @@ Allow: /img/
 Allow: /assets/style.css
 Allow: /assets/script.js
 
-# Block raw data file from indexing (not a page)
+# Block raw data file from direct indexing (not a page)
 Disallow: /assets/data.json
 
 # Sitemap location (required by Google & Bing)
 Sitemap: https://joker-abhy.onrender.com/sitemap.xml
 
-# ── Specific bot rules ──────────────────────────────────────
-# Google
+# ── Per-bot rules ───────────────────────────────────────────
 User-agent: Googlebot
 Allow: /
 
-# Bing
 User-agent: Bingbot
 Allow: /
 
-# GPTBot (OpenAI) — allow for AI visibility
+# Allow AI crawlers for visibility in AI search
 User-agent: GPTBot
 Allow: /
 
-# Common bad bots
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+# Slow down aggressive SEO crawlers
 User-agent: AhrefsBot
 Crawl-delay: 10
 
 User-agent: SemrushBot
+Crawl-delay: 10
+
+User-agent: MJ12bot
 Crawl-delay: 10

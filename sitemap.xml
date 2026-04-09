@@ -5,82 +5,118 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <!-- ═══════════════════════════════════════════════════════
-       PAGE 1: Homepage / Portfolio
+       PAGE 1: Homepage — Kolhapur Fitness Influencer Portfolio
        ═══════════════════════════════════════════════════════ -->
   <url>
     <loc>https://joker-abhy.onrender.com/</loc>
-    <lastmod>2025-04-01</lastmod>
+    <lastmod>2025-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
 
     <image:image>
       <image:loc>https://joker-abhy.onrender.com/img/AbhiPhotos/hero.jpeg</image:loc>
-      <image:title>Abhishek Gharpankar joker_abhy fitness influencer hero portrait</image:title>
-      <image:caption>Official portfolio hero image of Abhishek Gharpankar aka joker_abhy — fitness influencer India</image:caption>
-    </image:image>
-
-    <image:image>
-      <image:loc>https://joker-abhy.onrender.com/img/AbhiPhotos/photo1.jpeg</image:loc>
-      <image:title>Abhishek Gharpankar joker_abhy gym workout fitness photoshoot shirtless</image:title>
-      <image:caption>Abhishek Gharpankar fitness photoshoot — gym cable workout session</image:caption>
-    </image:image>
-
-    <image:image>
-      <image:loc>https://joker-abhy.onrender.com/img/AbhiPhotos/photo2.jpeg</image:loc>
-      <image:title>Abhishek Gharpankar joker_abhy outdoor fitness pose orange dhoti artistic</image:title>
-      <image:caption>joker_abhy outdoor artistic fitness photoshoot with orange dhoti</image:caption>
-    </image:image>
-
-    <image:image>
-      <image:loc>https://joker-abhy.onrender.com/img/AbhiPhotos/photo3.jpeg</image:loc>
-      <image:title>Abhishek Gharpankar joker_abhy nature background lifestyle fitness photoshoot</image:title>
-      <image:caption>joker_abhy nature lifestyle fitness photography session</image:caption>
+      <image:title>Abhishek Gharpankar joker_abhy Kolhapur fitness influencer hero portrait — brand sponsorship available</image:title>
+      <image:caption>Official portfolio hero image of Abhishek Gharpankar aka joker_abhy — Kolhapur's most popular fitness influencer</image:caption>
     </image:image>
 
     <image:image>
       <image:loc>https://joker-abhy.onrender.com/img/AbhiPhotos/hero.jfif</image:loc>
-      <image:title>Abhishek Gharpankar joker_abhy dark gym cable machine silhouette workout</image:title>
-      <image:caption>joker_abhy dark gym cable machine workout photography</image:caption>
+      <image:title>Abhishek Gharpankar joker_abhy dark gym cable machine workout silhouette Kolhapur</image:title>
+      <image:caption>joker_abhy dark gym workout photography — Kolhapur fitness influencer</image:caption>
     </image:image>
-  </url>
 
-  <!-- ═══════════════════════════════════════════════════════
-       PAGE 2: Brand Affiliations
-       ═══════════════════════════════════════════════════════ -->
-  <url>
-    <loc>https://joker-abhy.onrender.com/pages/affiliations.html</loc>
-    <lastmod>2025-04-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://joker-abhy.onrender.com/img/AbhiPhotos/photo1.jpeg</image:loc>
+      <image:title>Abhishek Gharpankar joker_abhy Kolhapur gym workout fitness photoshoot shirtless</image:title>
+      <image:caption>joker_abhy gym session fitness photoshoot — Kolhapur fitness creator</image:caption>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://joker-abhy.onrender.com/img/AbhiPhotos/photo2.jpeg</image:loc>
+      <image:title>Abhishek Gharpankar joker_abhy outdoor artistic fitness pose orange dhoti Kolhapur</image:title>
+      <image:caption>joker_abhy outdoor artistic fitness photoshoot — Raw Power series</image:caption>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://joker-abhy.onrender.com/img/AbhiPhotos/photo3.jpeg</image:loc>
+      <image:title>Abhishek Gharpankar joker_abhy nature background lifestyle fitness Maharashtra</image:title>
+      <image:caption>joker_abhy nature lifestyle photography — Nature &amp; Grind series</image:caption>
+    </image:image>
 
     <image:image>
       <image:loc>https://joker-abhy.onrender.com/img/ClientLogo/adobe.jpg</image:loc>
-      <image:title>Adobe brand partnership with fitness influencer Abhishek Gharpankar joker_abhy</image:title>
+      <image:title>Adobe brand sponsorship with Kolhapur fitness influencer joker_abhy Abhishek Gharpankar</image:title>
       <image:caption>Adobe x joker_abhy — tech and creative brand collaboration</image:caption>
     </image:image>
 
     <image:image>
       <image:loc>https://joker-abhy.onrender.com/img/ClientLogo/Croma.jpg</image:loc>
-      <image:title>Croma Electronics brand collaboration with joker_abhy fitness creator</image:title>
+      <image:title>Croma Electronics brand deal with joker_abhy Kolhapur fitness influencer</image:title>
       <image:caption>Croma x joker_abhy — India's electronics megastore partnership</image:caption>
     </image:image>
 
     <image:image>
       <image:loc>https://joker-abhy.onrender.com/img/ClientLogo/GNC.png</image:loc>
-      <image:title>GNC fitness supplements brand deal with Abhishek Gharpankar joker_abhy</image:title>
+      <image:title>GNC fitness supplements brand sponsorship joker_abhy Kolhapur</image:title>
       <image:caption>GNC x joker_abhy — premium fitness nutrition sponsorship India</image:caption>
     </image:image>
 
     <image:image>
       <image:loc>https://joker-abhy.onrender.com/img/ClientLogo/Muuchstac.png</image:loc>
-      <image:title>Muuchstac men's grooming sponsorship with joker_abhy fitness influencer</image:title>
+      <image:title>Muuchstac men's grooming sponsorship joker_abhy Kolhapur fitness influencer</image:title>
       <image:caption>Muuchstac x joker_abhy — men's beard grooming brand partnership</image:caption>
     </image:image>
 
     <image:image>
       <image:loc>https://joker-abhy.onrender.com/img/ClientLogo/oxy.png</image:loc>
-      <image:title>Oxy Only For Men collaboration with fitness creator Abhishek Gharpankar</image:title>
+      <image:title>Oxy Only For Men collaboration with joker_abhy Kolhapur</image:title>
       <image:caption>Oxy x joker_abhy — men's skincare and grooming campaign</image:caption>
+    </image:image>
+  </url>
+
+  <!-- ═══════════════════════════════════════════════════════
+       PAGE 2: Brand Affiliations — Product Sponsorships
+       ═══════════════════════════════════════════════════════ -->
+  <url>
+    <loc>https://joker-abhy.onrender.com/pages/affiliations.html</loc>
+    <lastmod>2025-04-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+
+    <image:image>
+      <image:loc>https://joker-abhy.onrender.com/img/Products/GNC_creatine.webp</image:loc>
+      <image:title>GNC Pro Performance Creatine Monohydrate promoted by joker_abhy Kolhapur fitness influencer</image:title>
+      <image:caption>Guardian GNC Pro Performance Creatine Monohydrate — recommended by Abhishek Gharpankar joker_abhy Kolhapur</image:caption>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://joker-abhy.onrender.com/img/ClientLogo/adobe.jpg</image:loc>
+      <image:title>Adobe brand partnership joker_abhy Kolhapur fitness influencer</image:title>
+      <image:caption>Adobe x joker_abhy affiliation</image:caption>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://joker-abhy.onrender.com/img/ClientLogo/GNC.png</image:loc>
+      <image:title>GNC fitness supplements collaboration joker_abhy Kolhapur</image:title>
+      <image:caption>GNC x joker_abhy affiliation</image:caption>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://joker-abhy.onrender.com/img/ClientLogo/Croma.jpg</image:loc>
+      <image:title>Croma Electronics brand affiliation joker_abhy Kolhapur</image:title>
+      <image:caption>Croma x joker_abhy affiliation</image:caption>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://joker-abhy.onrender.com/img/ClientLogo/Muuchstac.png</image:loc>
+      <image:title>Muuchstac grooming sponsorship joker_abhy Kolhapur</image:title>
+      <image:caption>Muuchstac x joker_abhy affiliation</image:caption>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://joker-abhy.onrender.com/img/ClientLogo/oxy.png</image:loc>
+      <image:title>Oxy Only For Men affiliation joker_abhy Kolhapur fitness creator</image:title>
+      <image:caption>Oxy x joker_abhy affiliation</image:caption>
     </image:image>
   </url>
 

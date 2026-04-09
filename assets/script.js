@@ -1,22 +1,25 @@
 /* ============================================================
    JOKER_ABHY — PORTFOLIO SCRIPT
-   Data-driven DOM population from data.json
+   Data-driven DOM population from assets/data.json
    ============================================================ */
 
 (async function () {
   'use strict';
 
-  /* ── 1. LOAD CONFIG ─────────────────────────────────────── */
+  /* ── 1. LOAD DATA.JSON ──────────────────────────────────── */
   let data;
   try {
     const res = await fetch('assets/data.json');
+    if (!res.ok) throw new Error('data.json not found');
     data = await res.json();
   } catch (e) {
     console.error('Failed to load portfolio data:', e);
     return;
   }
 
-  /* ── 2. INJECT JSON-LD STRUCTURED DATA ──────────────────── */
+  const { site, identity, page, stats, socials, brands, gallery, contact, footer } = data;
+
+  /* ── 2. INJECT DYNAMIC JSON-LD (augments static head schema) */
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'ProfilePage',
@@ -24,14 +27,21 @@
     dateModified: new Date().toISOString().split('T')[0],
     mainEntity: {
       '@type': 'Person',
-      name: data.identity.fullName,
-      alternateName: data.identity.aliases,
-      description: data.identity.bio,
-      url: data.seo.canonicalUrl,
-      image: data.identity.heroImage,
-      email: `mailto:${data.contact.email}`,
-      sameAs: data.socials.map(s => s.url),
-      knowsAbout: data.identity.niche
+      name: identity.fullName,
+      alternateName: identity.aliases,
+      description: identity.bio,
+      url: site.domain,
+      image: `${site.domain}/${identity.heroImage}`,
+      email: `mailto:${contact.email}`,
+      telephone: contact.phone,
+      address: {
+        '@type': 'PostalAddress',
+        addressLocality: identity.location.city,
+        addressRegion: identity.location.district + ', ' + identity.location.state,
+        addressCountry: 'IN'
+      },
+      sameAs: socials.map(s => s.url),
+      knowsAbout: identity.niche
     }
   };
   const ldScript = document.createElement('script');
@@ -39,20 +49,19 @@
   ldScript.textContent = JSON.stringify(jsonLd, null, 2);
   document.head.appendChild(ldScript);
 
-  /* ── 3. UPDATE META FROM DATA ───────────────────────────── */
-  document.title = data.seo.title;
-  setMeta('description', data.seo.description);
-  setMeta('keywords', data.seo.keywords);
-  setMeta('author', data.seo.author);
-  setOG('og:title', data.seo.ogTitle);
-  setOG('og:description', data.seo.ogDescription);
-  setOG('og:image', data.seo.ogImage);
-  setOG('og:type', data.seo.ogType);
-  setOG('og:url', data.seo.canonicalUrl);
-  setMeta('twitter:card', data.seo.twitterCard);
-  setMeta('twitter:title', data.seo.ogTitle);
-  setMeta('twitter:description', data.seo.ogDescription);
-  setMeta('twitter:image', data.seo.ogImage);
+  /* ── 3. UPDATE META TAGS FROM DATA ─────────────────────── */
+  document.title = page.title;
+  setMeta('description', page.description);
+  setMeta('keywords', page.keywords);
+  setMeta('author', page.author);
+  setOG('og:title', page.ogTitle);
+  setOG('og:description', page.ogDescription);
+  setOG('og:image', `${site.domain}/${identity.ogImage}`);
+  setOG('og:url', site.domain + '/');
+  setMeta('twitter:card', page.twitterCard);
+  setMeta('twitter:title', page.ogTitle);
+  setMeta('twitter:description', page.ogDescription);
+  setMeta('twitter:image', `${site.domain}/${identity.ogImage}`);
 
   function setMeta(name, content) {
     let el = document.querySelector(`meta[name="${name}"]`);
@@ -68,24 +77,23 @@
   /* ── 4. POPULATE HERO ───────────────────────────────────── */
   const heroImg = document.getElementById('hero-img');
   if (heroImg) {
-    heroImg.src = data.identity.heroImage;
-    heroImg.alt = data.identity.heroImageAlt;
+    heroImg.src = identity.heroImage;
+    heroImg.alt = identity.heroImageAlt;
   }
-  setText('hero-name-first', data.identity.fullName.split(' ')[0]);
-  setText('hero-name-last', data.identity.fullName.split(' ').slice(1).join(' '));
-  setText('hero-alias', '@' + data.identity.primaryAlias);
-  setText('hero-bio', data.identity.bio);
+  setText('hero-name-first', identity.fullName.split(' ')[0]);
+  setText('hero-name-last', identity.fullName.split(' ').slice(1).join(' '));
+  setText('hero-alias', '@' + identity.primaryAlias);
+  setText('hero-bio', identity.bio);
 
   const nicheWrap = document.getElementById('hero-niche');
   if (nicheWrap) {
-    nicheWrap.innerHTML = data.identity.niche
-      .map(n => `<span class="niche-pill">${n}</span>`).join('');
+    nicheWrap.innerHTML = identity.niche.map(n => `<span class="niche-pill">${n}</span>`).join('');
   }
 
   /* ── 5. POPULATE STATS ──────────────────────────────────── */
   const statsGrid = document.getElementById('stats-grid');
   if (statsGrid) {
-    statsGrid.innerHTML = data.stats.map(s => `
+    statsGrid.innerHTML = stats.map(s => `
       <div class="stat-card reveal" aria-label="${s.ariaLabel}">
         <div class="stat-icon">${s.icon}</div>
         <div class="stat-value">${s.value}</div>
@@ -96,35 +104,34 @@
   /* ── 6. POPULATE SOCIALS ────────────────────────────────── */
   const socialsGrid = document.getElementById('socials-grid');
   if (socialsGrid) {
-    socialsGrid.innerHTML = data.socials.map(s => `
+    socialsGrid.innerHTML = socials.map(s => `
       <a class="social-card reveal" href="${s.url}" target="_blank" rel="noopener noreferrer"
          style="--card-color:${s.color}" aria-label="${s.ariaLabel}">
         <div class="social-icon-wrap">${getSocialSVG(s.icon, s.color)}</div>
         <div class="social-platform">${s.platform}</div>
         <div class="social-handle">${s.handle}</div>
-        <span class="social-follow-btn">Follow ↗</span>
+        <span class="social-follow-btn">Follow &#x2197;</span>
       </a>`).join('');
   }
 
   /* ── 7. POPULATE BRAND CAROUSEL ─────────────────────────── */
   const track = document.getElementById('carousel-track');
   if (track) {
-    const buildItems = () => data.brands.map(b =>
+    const buildItems = () => brands.map(b =>
       `<span class="carousel-item">
-         <img src="${b.logo}" alt="${b.alt}" title="${b.name}" loading="lazy">
+         <img src="${b.logo}" alt="${b.alt}" title="${b.name}" loading="lazy" decoding="async">
        </span>
        <span class="carousel-divider" aria-hidden="true"></span>`
     ).join('');
-    // Duplicate for seamless loop
     track.innerHTML = buildItems() + buildItems();
   }
 
   /* ── 8. POPULATE GALLERY ────────────────────────────────── */
   const galleryGrid = document.getElementById('gallery-grid');
   if (galleryGrid) {
-    galleryGrid.innerHTML = data.gallery.map((img, i) => `
+    galleryGrid.innerHTML = gallery.map((img, i) => `
       <div class="gallery-item reveal" style="animation-delay:${i * 0.1}s">
-        <img src="${img.src}" alt="${img.alt}" loading="${img.loading}">
+        <img src="${img.src}" alt="${img.alt}" loading="${img.loading}" decoding="async">
         <div class="gallery-item-overlay">
           <span class="gallery-caption">${img.caption}</span>
         </div>
@@ -132,19 +139,24 @@
   }
 
   /* ── 9. POPULATE CONTACT ────────────────────────────────── */
-  setText('contact-email', data.contact.email);
   const mailLink = document.getElementById('contact-email-link');
-  if (mailLink) mailLink.href = `mailto:${data.contact.email}`;
+  if (mailLink) {
+    mailLink.href = `mailto:${contact.email}`;
+    mailLink.textContent = contact.email;
+  }
   const phoneLink = document.getElementById('contact-phone-link');
-  if (phoneLink) { phoneLink.href = `tel:${data.contact.phone}`; phoneLink.textContent = data.contact.phoneDisplay; }
-  setText('contact-cta-text', data.contact.ctaSubText);
+  if (phoneLink) {
+    phoneLink.href = `tel:${contact.phone}`;
+    phoneLink.textContent = contact.phoneDisplay;
+  }
+  setText('contact-cta-text', contact.ctaSubText);
 
   const formIframe = document.getElementById('google-form');
-  if (formIframe) formIframe.src = data.contact.googleFormUrl;
+  if (formIframe) formIframe.src = contact.googleFormUrl;
 
   const contactSocials = document.getElementById('contact-socials');
   if (contactSocials) {
-    contactSocials.innerHTML = data.socials.map(s => `
+    contactSocials.innerHTML = socials.map(s => `
       <a class="contact-social-btn" href="${s.url}" target="_blank" rel="noopener noreferrer" aria-label="${s.ariaLabel}">
         ${getSocialSVG(s.icon, '#ffffff')}
         ${s.platform}
@@ -152,41 +164,42 @@
   }
 
   /* ── 10. POPULATE FOOTER ────────────────────────────────── */
-  setText('footer-copy', data.footer.copyright);
+  setText('footer-copy', footer.copyright);
   const devCredit = document.getElementById('footer-credit');
   if (devCredit) {
-    devCredit.innerHTML = `<a href="${data.footer.developerUrl}">${data.footer.developer}</a>`;
+    devCredit.innerHTML = `<a href="${footer.developerUrl}" target="_blank" rel="nofollow noopener">${footer.developer}</a>`;
   }
-  const footerLogo = document.getElementById('footer-logo');
-  if (footerLogo) footerLogo.textContent = data.identity.primaryAlias;
 
-  /* ── 11. NAVBAR SCROLL BEHAVIOUR ────────────────────────── */
+  /* ── 11. NAVBAR SCROLL ──────────────────────────────────── */
   const navbar = document.getElementById('navbar');
-  window.addEventListener('scroll', () => {
-    navbar.classList.toggle('scrolled', window.scrollY > 60);
-  }, { passive: true });
+  if (navbar) {
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 60);
+    }, { passive: true });
+  }
 
-  /* ── 11b. HAMBURGER MENU ────────────────────────────────── */
+  /* ── 12. HAMBURGER MENU ─────────────────────────────────── */
   const hamburger = document.getElementById('hamburger');
   const mobileMenu = document.getElementById('mobile-menu');
   if (hamburger && mobileMenu) {
     hamburger.addEventListener('click', () => {
       const isOpen = mobileMenu.classList.toggle('open');
       hamburger.classList.toggle('open', isOpen);
-      hamburger.setAttribute('aria-expanded', isOpen);
+      hamburger.setAttribute('aria-expanded', String(isOpen));
+      mobileMenu.setAttribute('aria-hidden', String(!isOpen));
     });
-    // Close on link click
     mobileMenu.querySelectorAll('a').forEach(a => {
       a.addEventListener('click', () => {
         mobileMenu.classList.remove('open');
         hamburger.classList.remove('open');
         hamburger.setAttribute('aria-expanded', 'false');
+        mobileMenu.setAttribute('aria-hidden', 'true');
       });
     });
   }
 
-  /* ── 12. CUSTOM CURSOR ──────────────────────────────────── */
-  const dot = document.querySelector('.cursor-dot');
+  /* ── 13. CUSTOM CURSOR (desktop only) ───────────────────── */
+  const dot  = document.querySelector('.cursor-dot');
   const ring = document.querySelector('.cursor-ring');
   if (dot && ring && window.innerWidth > 768) {
     let mx = 0, my = 0;
@@ -195,7 +208,6 @@
       dot.style.left = mx + 'px';
       dot.style.top  = my + 'px';
     });
-    // Lag ring slightly
     (function animRing() {
       const rx = parseFloat(ring.style.left || 0);
       const ry = parseFloat(ring.style.top  || 0);
@@ -217,19 +229,18 @@
     });
   }
 
-  /* ── 13. SCROLL REVEAL ──────────────────────────────────── */
+  /* ── 14. SCROLL REVEAL ──────────────────────────────────── */
   const revealObs = new IntersectionObserver((entries) => {
     entries.forEach(e => {
       if (e.isIntersecting) { e.target.classList.add('visible'); revealObs.unobserve(e.target); }
     });
   }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
 
-  // Re-observe after dynamic population
   setTimeout(() => {
     document.querySelectorAll('.reveal').forEach(el => revealObs.observe(el));
   }, 100);
 
-  /* ── 14. SMOOTH SCROLL FOR CTA ──────────────────────────── */
+  /* ── 15. SMOOTH SCROLL ──────────────────────────────────── */
   document.querySelectorAll('a[href^="#"]').forEach(a => {
     a.addEventListener('click', e => {
       const target = document.querySelector(a.getAttribute('href'));
@@ -240,7 +251,7 @@
     });
   });
 
-  /* ── HELPERS ────────────────────────────────────────────── */
+  /* ── HELPERS ─────────────────────────────────────────────── */
   function setText(id, text) {
     const el = document.getElementById(id);
     if (el) el.textContent = text;
