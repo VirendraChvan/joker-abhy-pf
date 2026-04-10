@@ -11,9 +11,9 @@
   "categories": ["fitness", "lifestyle", "portfolio"],
   "icons": [
     {
-      "src": "/img/AbhiPhotos/hero.jpeg",
-      "sizes": "1080x1350",
-      "type": "image/jpeg",
+      "src": "/img/AbhiPhotos/logo.PNG",
+      "sizes": "any",
+      "type": "image/png",
       "purpose": "any"
     }
   ]
