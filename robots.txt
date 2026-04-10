@@ -1,12 +1,15 @@
 # ============================================================
 # robots.txt — joker_abhy Portfolio
 # Domain : https://joker-abhy.onrender.com
+# Updated: 2026-04-10
 # ============================================================
 
 # Allow all crawlers full access
 User-agent: *
 Allow: /
 Allow: /pages/
+Allow: /pages/about.html
+Allow: /pages/affiliations.html
 Allow: /img/
 Allow: /assets/style.css
 Allow: /assets/script.js
@@ -21,6 +24,9 @@ Sitemap: https://joker-abhy.onrender.com/sitemap.xml
 User-agent: Googlebot
 Allow: /
 
+User-agent: Googlebot-Image
+Allow: /img/
+
 User-agent: Bingbot
 Allow: /
 
@@ -28,10 +34,19 @@ Allow: /
 User-agent: GPTBot
 Allow: /
 
+User-agent: Google-Extended
+Allow: /
+
 User-agent: Claude-Web
 Allow: /
 
 User-agent: PerplexityBot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: ChatGPT-User
 Allow: /
 
 # Slow down aggressive SEO crawlers

@@ -3,25 +3,25 @@
     {
       "label": "Monthly Engagements",
       "value": "5M+",
-      "icon": "🔥",
+      "icon": "trending-up",
       "ariaLabel": "5 million plus monthly engagements across all platforms"
     },
     {
-      "label": "Brand Sponsorships",
+      "label": "Brand Collaborations",
       "value": "50+",
-      "icon": "🤝",
-      "ariaLabel": "Over 50 brand sponsorships completed"
+      "icon": "briefcase",
+      "ariaLabel": "Over 50 brand collaborations completed"
     },
     {
       "label": "Kolhapur Fitness",
       "value": "#1",
-      "icon": "💪",
+      "icon": "award",
       "ariaLabel": "Number one fitness content creator in Kolhapur"
     },
     {
       "label": "Platforms Active",
       "value": "3",
-      "icon": "📱",
+      "icon": "smartphone",
       "ariaLabel": "Active on 3 major social platforms"
     }
   ],
@@ -133,7 +133,7 @@
   },
 
   "footer": {
-    "copyright": "© 2025 Abhishek Gharpankar. All rights reserved.",
+    "copyright": "© 2025–2026 Abhishek Gharpankar. All rights reserved.",
     "developer": "Made By Virendra Chavan",
     "developerUrl": "https://www.instagram.com/virendra.exe"
   },

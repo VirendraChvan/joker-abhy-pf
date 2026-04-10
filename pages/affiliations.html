@@ -22,10 +22,11 @@
 
   <!-- Canonical -->
   <link rel="canonical" href="https://joker-abhy.onrender.com/pages/affiliations.html">
+  <link rel="alternate" hreflang="en-IN" href="https://joker-abhy.onrender.com/pages/affiliations.html" />
+  <link rel="alternate" hreflang="x-default" href="https://joker-abhy.onrender.com/pages/affiliations.html" />
 
   <!-- Search Engine Verification -->
   <meta name="google-site-verification" content="fQH-SIUZmeGXvNcTaP0SnbD2Bzy6s91rzRWP9hls6Uc">
-  <meta name="msvalidate.01" content="REPLACE_WITH_BING_VERIFICATION_CODE">
 
   <!-- ═══════════════════════════════════════════════════════
        OPEN GRAPH
@@ -60,7 +61,7 @@
         "@id": "https://joker-abhy.onrender.com/pages/affiliations.html#page",
         "url": "https://joker-abhy.onrender.com/pages/affiliations.html",
         "name": "Brand Affiliations — Abhishek Gharpankar joker_abhy Kolhapur",
-        "description": "All brand affiliations, product sponsorships and deals of Kolhapur fitness influencer Abhishek Gharpankar aka joker_abhy",
+        "description": "Products and brands that have collaborated with Kolhapur fitness influencer Abhishek Gharpankar aka joker_abhy",
         "inLanguage": "en-IN",
         "isPartOf": {
           "@type": "WebSite",
@@ -87,25 +88,6 @@
             "addressCountry": "IN"
           }
         }
-      },
-      {
-        "@type": "Product",
-        "name": "Guardian GNC Pro Performance Creatine Monohydrate",
-        "image": "https://joker-abhy.onrender.com/img/Products/GNC_creatine.webp",
-        "description": "GNC Pro Performance Creatine Monohydrate 3000mg — promoted by Kolhapur fitness influencer Abhishek Gharpankar joker_abhy. Micronized creatine for muscle strength and athletic performance.",
-        "brand": { "@type": "Brand", "name": "GNC" },
-        "url": "https://www.guardian.in/products/gnc-pro-performance-creatine-monohydrate-3000mg?variant=49645644775655",
-        "offers": {
-          "@type": "Offer",
-          "availability": "https://schema.org/InStock",
-          "url": "https://www.guardian.in/products/gnc-pro-performance-creatine-monohydrate-3000mg?variant=49645644775655",
-          "priceCurrency": "INR"
-        },
-        "review": {
-          "@type": "Review",
-          "reviewBody": "Promoted and recommended by Abhishek Gharpankar (joker_abhy), Kolhapur's top fitness influencer.",
-          "author": { "@type": "Person", "name": "Abhishek Gharpankar", "alternateName": "joker_abhy" }
-        }
       }
     ]
   }
@@ -120,6 +102,7 @@
 
   <link rel="icon" type="image/jpeg" href="../img/AbhiPhotos/hero.jpeg">
   <link rel="apple-touch-icon" href="../img/AbhiPhotos/hero.jpeg">
+  <link rel="manifest" href="/manifest.json">
   <link rel="stylesheet" href="../assets/style.css">
 </head>
 
@@ -138,6 +121,7 @@
       <li role="none"><a href="../index.html#brands" role="menuitem">Brands</a></li>
       <li role="none"><a href="../index.html#gallery" role="menuitem">Gallery</a></li>
       <li role="none"><a href="affiliations.html" role="menuitem" aria-current="page" style="color:var(--white)">Affiliations</a></li>
+      <li role="none"><a href="about.html" role="menuitem">About</a></li>
       <li role="none"><a href="../index.html#contact" class="nav-cta" role="menuitem">Collaborate &#x2197;</a></li>
     </ul>
     <button class="nav-hamburger" id="hamburger" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="mobile-menu">
@@ -150,6 +134,7 @@
     <a href="../index.html#brands" class="mobile-link">Brands</a>
     <a href="../index.html#gallery" class="mobile-link">Gallery</a>
     <a href="affiliations.html" class="mobile-link">Affiliations</a>
+    <a href="about.html" class="mobile-link">About</a>
     <a href="../index.html#contact" class="nav-cta mobile-link">Collaborate &#x2197;</a>
   </nav>
 
@@ -184,7 +169,7 @@
       <a class="footer-logo" href="../index.html" aria-label="joker_abhy Kolhapur home">
         joker<span>_</span>abhy
       </a>
-      <p class="footer-copy">&copy; 2025 Abhishek Gharpankar. All rights reserved.</p>
+      <p class="footer-copy">&copy; 2025–2026 Abhishek Gharpankar. All rights reserved.</p>
       <p class="footer-credit">
         <a href="https://www.instagram.com/virendra.exe" target="_blank" rel="nofollow noopener">Made By Virendra Chavan</a>
       </p>
@@ -220,9 +205,8 @@
       <article
         class="aff-card reveal"
         role="listitem"
-        aria-label="${b.name} — ${b.category} product sponsored by joker_abhy Kolhapur"
+        aria-label="${b.name} — ${b.category} product recommended by joker_abhy Kolhapur"
         style="animation-delay:${i * 0.08}s"
-        itemscope itemtype="https://schema.org/Product"
       >
         <div class="aff-card-logo-wrap">
           <img
@@ -230,23 +214,21 @@
             alt="${b.alt}"
             loading="lazy"
             decoding="async"
-            title="${b.name} — Sponsored by Abhishek Gharpankar joker_abhy Kolhapur"
+            title="${b.name} — Recommended by Abhishek Gharpankar joker_abhy Kolhapur"
             width="180"
             height="70"
-            itemprop="image"
           >
         </div>
         <div class="aff-card-body">
           <div class="aff-card-cat">${b.category}</div>
-          <div class="aff-card-name" itemprop="name">${b.name}</div>
-          <p class="aff-card-desc" itemprop="description">${b.description}</p>
+          <div class="aff-card-name">${b.name}</div>
+          <p class="aff-card-desc">${b.description}</p>
           <a
             class="aff-card-link"
             href="${b.link}"
             target="_blank"
             rel="noopener noreferrer sponsored"
-            aria-label="Buy or view ${b.name} — recommended by joker_abhy Kolhapur fitness influencer"
-            itemprop="url"
+            aria-label="View ${b.name} — recommended by joker_abhy Kolhapur fitness influencer"
           >
             View Product &#x2197;
           </a>

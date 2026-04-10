@@ -1,0 +1,20 @@
+{
+  "name": "joker_abhy — Abhishek Gharpankar | Fitness Influencer Kolhapur",
+  "short_name": "joker_abhy",
+  "description": "Official portfolio of Abhishek Gharpankar aka joker_abhy — Kolhapur's top fitness influencer. 5M+ monthly engagements. Open for brand sponsorships.",
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#000000",
+  "lang": "en-IN",
+  "orientation": "portrait-primary",
+  "categories": ["fitness", "lifestyle", "portfolio"],
+  "icons": [
+    {
+      "src": "/img/AbhiPhotos/hero.jpeg",
+      "sizes": "1080x1350",
+      "type": "image/jpeg",
+      "purpose": "any"
+    }
+  ]
+}
