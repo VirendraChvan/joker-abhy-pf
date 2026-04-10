@@ -525,7 +525,8 @@ section { position: relative; }
   transition: background var(--transition);
 }
 .stat-card:hover { background: var(--dark-3); }
-.stat-icon { font-size: 1.5rem; margin-bottom: 0.5rem; }
+.stat-icon { display:flex; justify-content:center; align-items:center; margin-bottom: 0.5rem; }
+.stat-icon svg { width: 32px; height: 32px; stroke: var(--accent, var(--red)); }
 .stat-value {
   font-family: var(--font-display);
   font-size: clamp(2.5rem, 4vw, 3.5rem);
