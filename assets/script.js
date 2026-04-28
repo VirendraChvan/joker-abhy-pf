@@ -52,16 +52,39 @@
       </a>`).join('');
   }
 
-  /* ── 4. BRAND CAROUSEL ──────────────────────────────────── */
+  /* ── 4. BRAND CAROUSEL (fixed seamless loop) ────────────── */
   const track = document.getElementById('carousel-track');
   if (track && brands) {
-    const buildItems = () => brands.map(b => `
-      <span class="carousel-item">
-        <img src="${b.logo}" alt="${b.alt}" title="${b.name}" loading="lazy" decoding="async">
+    /* Build one set of items */
+    const buildItems = (suffix) => brands.map(b => `
+      <span class="carousel-item" role="listitem">
+        <img src="${b.logo}" alt="${b.alt}" title="${b.name}" loading="lazy" decoding="async" width="140" height="48">
       </span>
       <span class="carousel-divider" aria-hidden="true"></span>`
     ).join('');
-    track.innerHTML = buildItems() + buildItems();
+
+    /* Insert 4 copies so we always have more than enough for seamless loop */
+    const oneCopy = buildItems();
+    track.innerHTML = oneCopy + oneCopy + oneCopy + oneCopy;
+
+    /* After images settle, measure ONE copy width and set custom property
+       so the CSS animation translates by exactly half the total track */
+    const imgs = track.querySelectorAll('img');
+    let loaded = 0;
+    const onLoad = () => {
+      loaded++;
+      if (loaded < imgs.length) return;
+      /* Width of 2 copies = half the 4-copy track */
+      const halfW = track.scrollWidth / 2;
+      track.style.setProperty('--carousel-half', halfW + 'px');
+      track.classList.add('carousel-ready');
+    };
+    imgs.forEach(img => {
+      if (img.complete) onLoad();
+      else { img.addEventListener('load', onLoad); img.addEventListener('error', onLoad); }
+    });
+    /* Fallback: start after 1.5 s regardless */
+    setTimeout(() => { if (!track.classList.contains('carousel-ready')) track.classList.add('carousel-ready'); }, 1500);
   }
 
   /* ── 5. GALLERY ─────────────────────────────────────────── */
