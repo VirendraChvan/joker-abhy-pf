@@ -259,11 +259,11 @@
         style="animation-delay:${i * 0.08}s"
         id="aff-card-${i}"
       >
-        <!-- 1:1 edge-to-edge photo -->
-        <div class="aff-vcard-photo">
+        <!-- 1:1 edge-to-edge photo (Clickable) -->
+        <a href="${b.link}" target="_blank" rel="noopener noreferrer sponsored" class="aff-vcard-photo" aria-label="View ${b.name} — recommended by joker_abhy">
           <img src="../${b.photo || b.logo}" alt="${b.alt}" loading="lazy" decoding="async">
           <span class="aff-vcard-cat">${b.category}</span>
-        </div>
+        </a>
         <!-- Info -->
         <div class="aff-vcard-body">
           <div class="aff-vcard-name">${b.name}</div>
